@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animals>
+    <animal>
+        <id>1</id>
+        <name>Барсик</name>
+        <type>cat</type>
+        <breed>Дворовый</breed>
+        <age>3</age>
+        <size>medium</size>
+        <gender>male</gender>
+        <status>available</status>
+        <description>Дружелюбный кот, любит играть и ласкаться. Отлично ладит с детьми.</description>
+        <history>Барсика нашли в подъезде жилого дома. Он был истощен и нуждался в лечении.</history>
+        <vaccinated>yes</vaccinated>
+        <sterilized>yes</sterilized>
+        <image>images/cat1.jpg</image>
+    </animal>
+    <animal>
+        <id>2</id>
+        <name>Рекс</name>
+        <type>dog</type>
+        <breed>Овчарка</breed>
+        <age>5</age>
+        <size>large</size>
+        <gender>male</gender>
+        <status>available</status>
+        <description>Умная и преданная собака, нуждается в активном хозяине.</description>
+        <history>Рекса бросили прежние хозяева при переезде. Он хорошо обучен базовым командам.</history>
+        <vaccinated>yes</vaccinated>
+        <sterilized>yes</sterilized>
+        <image>images/dog1.jpg</image>
+    </animal>
+    <animal>
+        <id>3</id>
+        <name>Мурка</name>
+        <type>cat</type>
+        <breed>Сибирская</breed>
+        <age>1</age>
+        <size>small</size>
+        <gender>female</gender>
+        <status>available</status>
+        <description>Игривая молодая кошечка, очень ласковая и любопытная.</description>
+        <history>Мурку принесли в приют, когда она была еще котенком.</history>
+        <vaccinated>yes</vaccinated>
+        <sterilized>yes</sterilized>
+        <image>images/cat2.jpg</image>
+    </animal>
+    <animal>
+        <id>4</id>
+        <name>Джек</name>
+        <type>dog</type>
+        <breed>Джек-рассел-терьер</breed>
+        <age>2</age>
+        <size>small</size>
+        <gender>male</gender>
+        <status>adopted</status>
+        <description>Энергичный и веселый пес, обожает прогулки и игры.</description>
+        <history>Джека нашли на улице с травмой лапы. После лечения он полностью восстановился.</history>
+        <vaccinated>yes</vaccinated>
+        <sterilized>yes</sterilized>
+        <image>images/dog2.jpg</image>
+    </animal>
+    <animal>
+        <id>5</id>
+        <name>Снежка</name>
+        <type>cat</type>
+        <breed>Персидская</breed>
+        <age>4</age>
+        <size>medium</size>
+        <gender>female</gender>
+        <status>available</status>
+        <description>Спокойная и нежная кошка, идеальна для тихого дома.</description>
+        <history>Снежка потерялась во время переезда своих хозяев и так и не нашла их.</history>
+        <vaccinated>yes</vaccinated>
+        <sterilized>yes</sterilized>
+        <image>images/cat3.jpg</image>
+    </animal>
+    <animal>
+        <id>6</id>
+        <name>Буян</name>
+        <type>dog</type>
+        <breed>Лабрадор</breed>
+        <age>7</age>
+        <size>large</size>
+        <gender>male</gender>
+        <status>available</status>
+        <description>Добродушный и терпеливый пес, отлично ладит с детьми и другими животными.</description>
+        <history>Буяна сдали в приют из-за переезда хозяев за границу.</history>
+        <vaccinated>yes</vaccinated>
+        <sterilized>yes</sterilized>
+        <image>images/dog3.jpg</image>
+    </animal>
+</animals>

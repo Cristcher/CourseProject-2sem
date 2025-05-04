@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хвостатый дом - Приют для животных</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" fill="black" stroke="black" stroke-width="2"/>
+                    <circle cx="12" cy="12" r="3" fill="white"/>
+                    <circle cx="9" cy="10" r="1.5" fill="white"/>
+                    <circle cx="15" cy="10" r="1.5" fill="white"/>
+                    <circle cx="10.5" cy="13.5" r="1.5" fill="white"/>
+                    <circle cx="13.5" cy="13.5" r="1.5" fill="white"/>
+                  </svg>
+                <span>Хвостатый дом</span>
+              </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="animals.html">Наши питомцы</a></li>
+                    <li><a href="articles.html">Статьи</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Дарим любовь и дом бездомным животным</h1>
+                <p>Наш приют помогает собакам и кошкам найти новых любящих хозяев с 2010 года</p>
+                <div class="hero-buttons">
+                    <a href="animals.html" class="btn btn-primary">Найти друга</a>
+                    <a href="#about" class="btn btn-primary">О нас</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>Наша миссия</h2>
+                <p>Мы спасаем, лечим, стерилизуем и находим новые дома для бездомных животных. Наша команда волонтеров работает 24/7, чтобы обеспечить лучшую жизнь для наших подопечных.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">1200+</span>
+                        <span class="stat-label">Спасенных животных</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">950+</span>
+                        <span class="stat-label">Успешных усыновлений</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Волонтеров</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="container">
+                <h2>Последние статьи</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="images/article1.jpg" alt="Как подготовить дом к появлению питомца" loading="lazy">
+                        <div class="news-content">
+                            <h3>Как подготовить дом к появлению питомца</h3>
+                            <p class="news-date">15 мая 2023 • 8 мин чтения</p>
+                            <p>Полное руководство по созданию безопасной среды для нового члена семьи: от выбора места для сна до защиты проводов.</p>
+                            <a href="articles.html" class="read-more" data-article="1">Читать статью</a>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <img src="images/article2.jpg" alt="Основы дрессировки собак" loading="lazy">
+                        <div class="news-content">
+                            <h3>Основы дрессировки собак</h3>
+                            <p class="news-date">2 мая 2023 • 12 мин чтения</p>
+                            <p>Простые и эффективные методы дрессировки для начинающих: от базовых команд до решения поведенческих проблем.</p>
+                            <a href="articles.html" class="read-more" data-article="2">Читать статью</a>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <img src="images/article3.jpg" alt="Питание кошек: мифы и реальность" loading="lazy">
+                        <div class="news-content">
+                            <h3>Питание кошек: мифы и реальность</h3>
+                            <p class="news-date">20 апреля 2023 • 10 мин чтения</p>
+                            <p>Разбираем популярные заблуждения о кормлении кошек и составляем идеальный рацион для вашего питомца.</p>
+                            <a href="articles.html" class="read-more" data-article="3">Читать статью</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Хвостатый дом</h3>
+                    <p>Приют для бездомных животных в Москве. Работаем с 1111 года.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="animals.html">Наши питомцы</a></li>
+                        <li><a href="articles.html">Статьи</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Контакты</h3>
+                    <p>Москва, ул. Несуществующая, 15</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@animal-shelter.ru</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Приют "Хвостатый дом". Все права защищены.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="ВКонтакте"><i class="icon-vk"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="icon-telegram"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

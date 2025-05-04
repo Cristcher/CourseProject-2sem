@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Хвостатый дом</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" fill="black" stroke="black" stroke-width="2"/>
+                    <circle cx="12" cy="12" r="3" fill="white"/>
+                    <circle cx="9" cy="10" r="1.5" fill="white"/>
+                    <circle cx="15" cy="10" r="1.5" fill="white"/>
+                    <circle cx="10.5" cy="13.5" r="1.5" fill="white"/>
+                    <circle cx="13.5" cy="13.5" r="1.5" fill="white"/>
+                  </svg>
+                <span>Хвостатый дом</span>
+              </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="animals.html">Наши питомцы</a></li>
+                    <li><a href="articles.html">Статьи</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                </ul>
+                <button class="nav-toggle" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contacts-hero">
+            <div class="container">
+                <h1>Свяжитесь с нами</h1>
+                <p>Мы всегда рады новым волонтерам, вопросам об усыновлении и предложениям о сотрудничестве.</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8f6680b878493775939dba63908eea9039939681519434f1807ab016613c82e8&amp;source=constructor" width=100% height=100% frameborder="0"></iframe>
+                    </div>
+                    <div class="contact-details">
+                        <h2>Контактная информация</h2>
+                        <div class="contact-item">
+                            <i class="icon-location"></i>
+                            <p>Москва, ул. Добрая, 15</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="icon-phone"></i>
+                            <p>+7 (495) 123-45-67</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="icon-email"></i>
+                            <p>info@animal-shelter.ru</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="icon-time"></i>
+                            <p>Часы работы: ежедневно с 10:00 до 19:00</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="ВКонтакте"><i class="icon-vk"></i></a>
+                            <a href="#" class="social-link" aria-label="Telegram"><i class="icon-telegram"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="container">
+                <h2>Форма обратной связи</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя*</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Тема</label>
+                        <select id="subject" name="subject">
+                            <option value="adoption">Усыновление животного</option>
+                            <option value="volunteer">Волонтерство</option>
+                            <option value="donation">Пожертвование</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение*</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Дом с хвостом</h3>
+                    <p>Приют для бездомных животных в Москве. Работаем с 1111 года.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="animals.html">Наши питомцы</a></li>
+                        <li><a href="articles.html">Статьи</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Контакты</h3>
+                    <p>Москва, ул. Несуществующая, 15</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@animal-shelter.ru</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Приют "Хвостатый дом". Все права защищены.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="ВКонтакте"><i class="icon-vk"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="icon-telegram"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="icon-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contacts.js"></script>
+</body>
+</html>
